@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+<title>Register Today</title>
+{% endblock %}
+{% block body %}
+<div style="padding:5% 30% 5% 30% ;" class="container-flex ml-5">
+    <div class="row center ">
+        <div class=" center">
+            <form  action="" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-botom mb-4 text-center">Join today</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger mb-5 danger">Register</button>
+              </div>   
+        </form>
+        <div class="border-top pt-3">
+        <small class="text-muted">
+            Don't have an account? <a class="ml-2" href="">sign in</a>
+        </small>
+        </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

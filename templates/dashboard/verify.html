@@ -1,0 +1,26 @@
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+<title>Verify your identity for more offers</title>
+{% endblock %}
+{% block body %}
+<div style="padding:5% 30% 5% 30% ;" class="container-flex ml-5">
+    <div class="row center ">
+        <div class=" center">
+            <form  action="" method="Post", enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-botom mb-4 text-center"></legend>
+                {{ verify|crispy }}
+            </fieldset>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger mb-5 danger">Verify</button>
+              </div>   
+        </form>
+        
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

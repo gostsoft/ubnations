@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Logged out</title>
+{% endblock %}
+{% block body %}
+<div style="padding:5% 30% 5% 30% ;" class="container-flex ml-5">
+    <h1>You have been successfully logged out </h1>
+    <a href="{% url 'login' %}"><button type="submit" class="btn btn-danger mb-5 danger">Login</button></a>
+</div>
+
+{% endblock %}

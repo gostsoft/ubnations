@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0023)https://ubnationss.com/ -->
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, viewport-fit=cover">
+
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/fontawesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/magnific-popup.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/nice-select.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/slick.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/meanmenu.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/odometer.min.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/style.css' %}">
+<link rel="stylesheet" href="{% static 'United Bank of Nations_files/responsive.css' %}">
+<title>My United Banking </title>
+<link rel="icon" type="image/png" href="https://ubnationss.com/assets/img/favicon.png' %}">
+<script src="{% static 'United Bank of Nations_files/4dajkgfiqya61waie17ohxrb9gspo343.js.download' %}" async=""></script>
+<style type="text/css" id="#jarallax-clip-0">#jarallax-container-0 {
+   clip: rect(0 991px 839px 0);
+   clip: rect(0, 991px, 839px, 0);
+}</style><style type="text/css" id="#jarallax-clip-1">#jarallax-container-1 {
+   clip: rect(0 991px 800px 0);
+   clip: rect(0, 991px, 800px, 0);
+}</style></head>
+
+<body><div class="preloader" style="display: none;">
+<div class="loader">
+<div class="shadow"></div>
+<div class="box"></div>
+</div>
+</div>
+
+
+<div class="navbar-area">
+<div class="luvion-responsive-nav">
+<div class="container">
+<div class="luvion-responsive-menu">
+<div class="logo">
+<a href="{% url 'home' %}">
+<script type="text/javascript">
+//<![CDATA[
+window.__mirage2 = {petok:"4ab3c690eab27e100076a834faa98e77055409a1-1632795276-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="{% static 'United Bank of Nations_files/mirage2.min.js.download' %}"></script>
+<!-- <img data-cfsrc="/assets/img/logo.png' %}" alt="logo" style="display:none;visibility:hidden;"><noscript><img src="/assets/img/logo.png' %}" alt="logo"></noscript> -->
+<img data-cfsrc="{% static 'United Bank of Nations_files/black-logo.png' %}" alt="logo" src="{% static 'United Bank of Nations_files/black-logo.png' %}">
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="luvion-nav">
+<div class="container">
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="#">
+<img data-cfsrc="{% static 'United Bank of Nations_files/logo.png' %}" alt="logo" src="{% static 'United Bank of Nations_files/black-logo.png' %}">
+<img data-cfsrc="/assets/img/black-logo.png' %}" alt="logo" src="{% static 'United Bank of Nations_files/black-logo.png' %}">
+</a>
+<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="display: block;">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
+    <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="{% url 'tnc' %}" class="nav-link">Terms and conditions</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+    {% if not user.is_authenticated %}
+    <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Sign in</a></li>
+  </ul>
+  <div class="others-options">
+    <a href="{% url 'register' %}" class="login-btn"><i class="flaticon-user"></i> Get Started</a>
+  </div>
+  {% else %}
+  <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">logout</a></li>
+</ul>
+<div class="others-options">
+  <a href="{% url 'dashboard' %}" class="login-btn"><i class="flaticon-user"></i> Back to dashboard</a>
+</div>
+{% endif %}
+</div>
+</nav>
+</div>
+</div>
+</div>
+
+{% block body %}
+
+
+
+{% endblock %}
+
+
+<section class="account-create-area">
+<div class="container">
+<div class="account-create-content">
+<h2>Apply for an account in minutes</h2>
+<p>Get your UBN account today!</p>
+<a href="{% url 'register' %}" class="btn btn-primary">Get Your UBN Account</a>
+</div>
+</div>
+</section>
+
+
+<footer class="footer-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-md-6">
+<div class="single-footer-widget">
+<div class="logo">
+<a href="{% url 'home' %}"><img src="{% static 'United Bank of Nations_files/black-logo.png' %}" alt="logo"></a>
+<p>In a highly competitive industry, financial institutions are increasingly investing in technology to improve their customer experience and increase operational efficiency.</p>
+</div>
+<ul class="social-links">
+<li><a href="{% url 'home' %}0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="{% url 'home' %}0" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href="{% url 'home' %}0" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="{% url 'home' %}0" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-md-6">
+<div class="single-footer-widget">
+<h3>Useful link</h3>
+<ul class="list">
+<li><a href="{% url 'about' %}">About Us</a></li>
+<li><a href="{% url 'login' %}">Services</a></li>
+<li><a href="{% url 'login' %}">Features</a></li>
+<li><a href="{% url 'tnc' %}">Terms &amp; Condition</a></li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-3 col-sm-6 col-md-6">
+<div class="single-footer-widget">
+<h3>Address</h3>
+<ul class="footer-contact-info">
+<li><span>Location:</span> 27 Division St, New York, NY 10002, USA</li>
+<!-- <li><span>Email:</span> <a href="mailto:info@ubnationss.com"></a>info@ubnationss.com</li> -->
+<li><span>Phone:</span> <a href="tel:tel:+17027511378">+17027511378</a></li>
+<li><span>Fax:</span> <a href="tel:+17027511378">+17027511378</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="copyright-area">
+<p>Copyright @2022 ubn</p>
+</div>
+</div>
+<div class="map-image"><img data-cfsrc="/assets/img/map.png' %}" alt="map" src="{% static 'United Bank of Nations_files/map.png' %}"></div>
+</footer>
+
+<div class="go-top"><i class="fas fa-arrow-up"></i></div>
+
+<script src="{% static 'United Bank of Nations_files/jquery.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/bootstrap.bundle.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/meanmenu.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/nice-select.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/slick.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/magnific-popup.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/appear.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/odometer.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/owl.carousel.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/parallax.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/wow.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/form-validator.min.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/contact-form-script.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/main.js.download' %}"></script>
+<script src="{% static 'United Bank of Nations_files/money.js.download' %}"></script>
+
+<!-- <iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;" src="{% static 'United Bank of Nations_files/saved_resource.html"></iframe><div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe" style="display: block; border: none; position: fixed; inset: auto 0px 0px auto; width: 430px; height: 256px; opacity: 1; background: none transparent !important; margin: 0px; max-height: 100vh; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important; border-radius: 47px 30px 47px 47px;" src="{% static 'United Bank of Nations_files/saved_resource(1).html"></iframe></div></body></html> -->

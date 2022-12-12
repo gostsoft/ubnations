@@ -1,0 +1,38 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Message Details</title>
+{% endblock %}
+ {% block body %}
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Message</h1>
+                    <div class="card text-center">
+                        <div class="card-header" style="background-color: rgb(221, 59, 59); color:rgb(252, 249, 249)">
+                          Your Inbox
+                        </div>
+                        <div class="card-body"style="background-color: #FBF2CF;">
+                          <!-- <h5 class="card-title">Special title treatment</h5> -->
+                          <p class="card-text" style="color: black;" >{{ object.message }}</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                        <!-- <div class="card-footer text-muted">
+                            {{ object.date }}
+                        </div> -->
+                      </div>
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+           {% endblock %}

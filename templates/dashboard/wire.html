@@ -1,0 +1,29 @@
+{% extends "dashboard/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+<title>Wire Transfer</title>
+{% endblock %}
+
+{% block body %}
+<div style="padding:5% 30% 5% 30% ;" class="container-flex ml-5">
+    <div class="row center ">
+        <div class=" center">
+            <form  action="" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-botom mb-4 text-center">Wire Transfer</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-danger mb-5 danger">Proceed</button>
+              </div>   
+        </form>
+        <div class="border-top pt-3">
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
